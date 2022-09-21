@@ -27,6 +27,8 @@ static void readcmdline(fraction & frac, int argc, char* argv[])
 static void test23467(int argc, char* argv[])
 {
     //TODO: implement function
+    // test string for push and merge
+
 }
 
 static void test5()
