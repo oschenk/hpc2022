@@ -12,7 +12,7 @@
 
 **When** : Tuesday 4:30pm-6:15pm, Wednesday 10:30am - 12:15am. The course starts on Tuesday, September 20, 2:30pm - 4:15pm
 
-**Where**: Room D.1.14 on Tuesday 2:30pm - 4:15pm,, Room D.1.15 on Wednesday 10:30am - 12:15am
+**Where**: Room C1.03 on Tuesday 2:30pm - 4:15pm, Room D1.14 on Wednesday 10:30am - 12:15am
 
 **Git**: https://github.com/oschenk/hpc2022
 
