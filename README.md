@@ -18,7 +18,6 @@
 
 ## Course Description
 
-
 The course is designed to teach students how to program parallel computers to efficiently solve challenging problems in science and engineering, where very fast computers are required either to perform complex simulations or to analyze enormous datasets. This HPC course is a graduate-level introduction to high performance computing. It refers to two things: efficient as the problem size grows, and efficient as the system size measured in numbers of cores grows. The course is organized as an HPC Software Atelier. The practical aspect of this course is implementing the techniques you’ll learn to run on real parallel systems, so you can check whether what appears to work well in theory also translates into practice. Programming models you will use include OpenMP, and MPI, and possibly others. Therefore, this computing lab consists of hand-on projects on HPC. Students will also be offered a number of projects on performance analysis, parallelism detection and efficient development for modern manycore processors using OpenMP and MPI. This experience will be very useful for individual semester projects in other classes, where students might develop & deploy components of massively parallel numerical simulation software. GPU computing will not be covered in this course. It will be fully discussed in the annual CSCS-USI Summer university on Effective High-Performance Computing & Data Analytics where we will focus on the effective exploitation of state-of-the-art hybrid HPC systems with a special focus on Data Analytics. The content of the summer university course is tailored for intermediate graduate students interested in both learning parallel programming models, and having hands-on experience using HPC systems. Starting from an introductory explanation of the available systems at CSCS, the course will progress to more applied topics such as parallel programming on accelerators, scientific libraries, and deep learning software frameworks. The following topics will be covered: 
  * GPU architectures
  * GPU programming, 
@@ -46,7 +45,7 @@ The lab requirements include programming of mini-projects and other assignments;
 
 
 ## Programming
-We will use C/C++, Matlab, MPI, and the Intel Math Kernel Library for
+We will use C/C++, Julia, Python, MPI, OpenMP, and the Intel Math Kernel Library for
 the mini-project programs.
 
 
