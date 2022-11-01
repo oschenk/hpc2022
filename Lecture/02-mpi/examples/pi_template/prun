@@ -1,0 +1,13 @@
+#!/bin/bash -l
+#SBATCH --job-name=hpc-class             # job name
+#SBATCH --time 00:30:00                  # wall-clock time (hrs:mins::secs)
+#SBATCH --nodes=2                        # number of compute nodes
+#SBATCH --ntasks=4                       # number of total MPI tasks
+#SBATCH --error=job.%J.err               # error file name
+#SBATCH --output=job.%J.out              # output file name
+
+# load modules
+module load openmpi
+
+# your commands 
+mpirun $@
