@@ -1,0 +1,79 @@
+\documentclass[unicode,11pt,a4paper,oneside,numbers=endperiod,openany]{scrartcl}
+
+\usepackage{amsmath}
+\input{assignment.sty}
+\begin{document}
+
+
+\setassignment
+\setduedate{21.12.2022, 23:59}
+
+\serieheader{High-Performance Computing}{2022}{Student: FULL NAME}{Discussed with: FULL NAME}{Solution for Project 7}{}
+\newline
+
+\assignmentpolicy
+
+% -------------------------------------------------------------------------- %
+% -------------------------------------------------------------------------- %
+% --- Exercise 1 ----------------------------------------------------------- %
+% -------------------------------------------------------------------------- %
+% -------------------------------------------------------------------------- %
+
+\section{Parallel Space Solution of a nonlinear PDE using MPI [in total 35 points]}
+
+\subsection{Initialize and finalize MPI [5 Points]}
+
+\subsection{Create a Cartesian topology [5 Points]}
+
+\subsection{Extend the linear algebra functions [5 Points]}
+
+\subsection{Exchange ghost cells [10 Points]}
+
+\subsection{Scaling experiments [10 Points]}
+
+
+ % -------------------------------------------------------------------------- %
+% -------------------------------------------------------------------------- %
+% --- Exercise 2 ----------------------------------------------------------- %
+% -------------------------------------------------------------------------- %
+% -------------------------------------------------------------------------- %
+
+\section{Python for High-Performance Computing (HPC) [in total 50 points]}
+
+\subsection{Sum of ranks: MPI collectives [5 Points]}
+
+\subsection{Domain decomposition: Create a Cartesian topology [5 Points]}
+
+\subsection{Exchange rank with neighbours [5 Points]}
+
+\subsection{Change linear algebra functions [5 Points]}
+
+\subsection{Exchange ghost cells [5 Points]}
+
+\subsection{Scaling experiments [5 Points]}
+
+\subsection{A self-scheduling example: Parallel Mandelbrot [20 Points]}
+
+
+\section{Task:  Quality of the Report [15 Points]}
+Each project will have 100 points (out of  which 15 points will be given to the general quality of the written report).
+
+
+\section*{Additional notes and submission details}
+Submit the source code files (together with your used \texttt{Makefile}) in
+an archive file (tar, zip, etc.), and summarize your results and the
+observations for all exercises by writing an extended Latex report.
+Use the Latex template from the webpage and upload the Latex summary
+as a PDF to \href{https://www.icorsi.ch/course/view.php?id=14652}{iCorsi}.
+
+\begin{itemize}
+	\item Your submission should be a gzipped tar archive, formatted like project\_number\_lastname\_firstname.zip or project\_number\_lastname\_firstname.tgz. 
+	It should contain:
+	\begin{itemize}
+		\item all the source codes of your solutions;
+		\item your write-up with your name  project\_number\_lastname\_firstname.pdf.
+	\end{itemize}
+	\item Submit your .tgz through Icorsi.
+\end{itemize}
+
+\end{document}

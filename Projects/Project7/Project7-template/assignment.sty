@@ -1,0 +1,95 @@
+\usepackage{ifthen}
+\usepackage[utf8]{inputenc}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\pagestyle{plain}
+\voffset -5mm
+\oddsidemargin  0mm
+\evensidemargin -11mm
+\marginparwidth 2cm
+\marginparsep 0pt
+\topmargin 0mm
+\headheight 0pt
+\headsep 0pt
+\topskip 0pt        
+\textheight 255mm
+\textwidth 165mm
+
+\newcommand{\duedate} {}
+\newcommand{\setduedate}[1]{%
+\renewcommand\duedate {Due date:~ #1}}
+\newcommand\isassignment {false}
+\newcommand{\setassignment}{\renewcommand\isassignment {true}}
+\newcommand{\ifassignment}[1]{\ifthenelse{\boolean{\isassignment}}{#1}{}}
+\newcommand{\ifnotassignment}[1]{\ifthenelse{\boolean{\isassignment}}{}{#1}}
+
+\newcommand{\assignmentpolicy}{
+\begin{table}[h]
+\begin{center}
+\scalebox{0.8} {%
+\begin{tabular}{|p{0.02cm}p{16cm}|}
+\hline
+&\\
+\multicolumn{2}{|c|}{\Large\textbf{HPC  2021 ---  Submission Instructions}}\\
+\multicolumn{2}{|c|}{\large\textbf{(Please, notice that following instructions are mandatory: }}\\
+\multicolumn{2}{|c|}{\large\textbf{submissions that don't comply with, won't be considered)}}\\
+&\\
+\textbullet & Assignments must be submitted to \href{https://www.icorsi.ch/course/view.php?id=12615}{iCorsi} (i.e. in electronic format).\\
+\textbullet & Provide both executable package and sources (e.g. C/C++ files, Matlab). 
+If you are using libraries, please add them in the file. Sources must be organized in directories called:\\
+\multicolumn{2}{|c|}{\textit{Project\_number\_lastname\_firstname}}\\
+& and  the  file must be called:\\
+\multicolumn{2}{|c|}{\textit{project\_number\_lastname\_firstname.zip}}\\
+\multicolumn{2}{|c|}{\textit{project\_number\_lastname\_firstname.pdf}}\\
+\textbullet &  The TAs will grade your project by reviewing your project write-up, and looking at the implementation 
+                 you attempted, and benchmarking your code's performance.\\
+
+\textbullet & You are allowed to discuss all questions with anyone you like; however: (i) your submission must list anyone you discussed problems with and (ii) you must write up your submission independently.\\
+\hline
+\end{tabular}
+}
+\end{center}
+\end{table}
+}
+\newcommand{\punkte}[1]{\hspace{1ex}\emph{\mdseries\hfill(#1~\ifcase#1{Points}\or{Points}\else{Points}\fi)}}
+
+
+\newcommand\serieheader[6]{
+\thispagestyle{empty}%
+\begin{flushleft}
+\includegraphics[width=0.4\textwidth]{usi_inf.png}
+\end{flushleft}
+  \noindent%
+  {\large\ignorespaces{\textbf{#1}}\hspace{\fill}\ignorespaces{ \textbf{#2}}}\\ \\%
+  {\large\ignorespaces #3 \hspace{\fill}\ignorespaces #4}\\
+  \noindent%
+  \bigskip
+  \hrule\par\bigskip\noindent%
+  \bigskip {\ignorespaces {\Large{\textbf{#5}}}
+  \hspace{\fill}\ignorespaces \large \ifthenelse{\boolean{\isassignment}}{\duedate}{#6}}
+  \hrule\par\bigskip\noindent%  \linebreak
+ }
+
+\makeatletter
+\def\enumerateMod{\ifnum \@enumdepth >3 \@toodeep\else
+      \advance\@enumdepth \@ne
+      \edef\@enumctr{enum\romannumeral\the\@enumdepth}\list
+      {\csname label\@enumctr\endcsname}{\usecounter
+        {\@enumctr}%%%? the following differs from "enumerate"
+	\topsep0pt%
+	\partopsep0pt%
+	\itemsep0pt%
+	\def\makelabel##1{\hss\llap{##1}}}\fi}
+\let\endenumerateMod =\endlist
+\makeatother
+
+
+
+
+\usepackage{textcomp}
+
+
+
+
